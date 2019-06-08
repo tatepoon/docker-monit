@@ -6,6 +6,8 @@ RUN yum install -y epel-release && \
 	net-snmp \
 	net-snmp-utils \
 	&& yum clean all
+	
+COPY /etc/localtime /etc/localtime
 
 EXPOSE 2812
 
